@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Nunito:wght@700&family=Oswald:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: antiquewhite;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav li {
+    list-style: none;
+    padding: 26px 30px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-family: 'Nunito';
+    cursor: pointer;
+    transition: 0.6s ease;
+}
+
+nav li a:hover {
+    color: midnightblue;
+}
+
+.spanContainer span {
+    color: purple;
+    font-family: 'Oswald';
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.firstSection {
+    padding: 10vh 0;
+    height: 70vh;
+}
+
+.box-main {
+    margin-top: 18vh; 
+    text-align: center;
+}
+
+.span1 {
+    font-size: 30px;
+    font-family: 'Baloo Bhaijaan 2';
+    color: antiquewhite;
+}
+
+.span2 {
+    font-size: 23px;
+    font-family: 'Oswald';
+    color: antiquewhite;
+}
+
+.secondHalf {
+    display: flex;
+    flex-direction: column;
+}
+
+.firstHalf img {
+    width: 10%;
+    border: 5px solid midnightblue;
+    border-radius: 100%;
+}
+
+.background {
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    background-size: cover;
+    background-blend-mode: lighten;
+}
+
+.section {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    max-width: 80%;
+}
+
+.h1 {
+    font-size: 30px;
+    font-family: 'Oswald';
+    font-weight: lighter;
+}
+
+.p1 {
+    font-size: 20px;
+    font-family: 'Baloo Bhaijaan 2';
+}
+
+.paras {
+    padding: 0 65px;
+}
+
+.thumbnail img {
+    border-radius: 100%;
+    border: 5px solid midnightblue;
+}
+
+.btn {
+    font-size: 20px;
+    padding: 10px;
+    font-family: 'Baloo Bhaijaan 2';
+    border-radius: 50px;
+    border: 5px solid cyan;
+    background: linear-gradient(to bottom right, purple, black, midnightblue);
+    margin: 10px;
+}
+
+.btn a {
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.8s ease;
+    color: white;
+}
+
+.btn a:hover {
+    color: antiquewhite;
+}
+
+.projectContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects {
+    padding: 10px;
+}
+
+.hamburger {
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    cursor: pointer;
+    display: none;
+}
+
+.bar1, .bar2, .bar3 {
+    background-color: midnightblue;
+    width: 50px;
+    height: 5px;
+    margin: 6px 0;
+    transition: 1s ease;
+}
+
+.cross .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.cross .bar2 {
+    opacity: 0;
+}
+
+.cross .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-image: linear-gradient(to bottom, yellow, cyan);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+@media only screen and (max-width:950px) {
+    nav ul {
+        padding-top: 30px;
+        flex-direction: column;
+    }
+    .spanContainer {
+        background-color: antiquewhite;
+        width: 100vw;
+        text-align: center;
+        padding-top: 300px;
+        height: 10vh;
+    }
+    .list {
+        background-color: antiquewhite;
+        width: 100vw;
+        height: 60vh;
+        transition: transform 2s ease;
+    }
+    .listGo {
+        transform: translate(-1000px, 0);
+    }
+    .hamburger {
+        display: block;
+    }
+    .section {
+        flex-direction: column;
+    }
+}
